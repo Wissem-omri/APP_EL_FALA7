@@ -1,0 +1,76 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #eef4ed;
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 { color: #2c7a7b; }
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 10px auto;
+  width: 320px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #2f855a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover { background-color: #276749; }
+.logout { background-color: #e53e3e; }
+.hidden { display: none; }
+
+.farm-card, .valve-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 90%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.valve-card {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-on { background: #38a169; color: white; }
+.toggle-off { background: #a0aec0; color: white; }
+
+.delete-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

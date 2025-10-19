@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Farm Dashboard 🌾</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart Farm 🌿</h1>
+
+  <section id="authSection">
+    <div class="card">
+      <h2>Connexion</h2>
+      <input id="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Mot de passe">
+      <button onclick="login()">Se connecter</button>
+      <p>Pas encore de compte ? <a href="#" onclick="showRegister()">Créer un compte</a></p>
+    </div>
+
+    <div id="registerCard" class="card hidden">
+      <h2>Créer un compte</h2>
+      <input id="username" placeholder="Nom d'utilisateur">
+      <input id="regEmail" placeholder="Email">
+      <input id="regPassword" type="password" placeholder="Mot de passe">
+      <button onclick="register()">S'inscrire</button>
+      <p><a href="#" onclick="showLogin()">Déjà un compte ?</a></p>
+    </div>
+  </section>
+
+  <section id="dashboard" class="hidden">
+    <h2>Mes Fermes 🌱</h2>
+    <div class="createFarm">
+      <input id="farmName" placeholder="Nom de la ferme">
+      <input id="farmLoc" placeholder="Localisation">
+      <button onclick="createFarm()">Ajouter</button>
+      <button class="logout" onclick="logout()">Déconnexion</button>
+    </div>
+
+    <div id="farmList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
