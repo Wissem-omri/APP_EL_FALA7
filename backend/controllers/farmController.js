@@ -19,3 +19,4 @@ export const deleteFarm = async (req, res) => {
   await Farm.findByIdAndDelete(req.params.id);
   res.json({ message: "Farm deleted" });
 };
+//farm
